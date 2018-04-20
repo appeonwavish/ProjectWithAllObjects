@@ -32,8 +32,6 @@ destroy(this.cb_1)
 end on
 
 type cb_1 from commandbutton within addwindown
-integer x = 439
-integer y = 256
 integer width = 457
 integer height = 132
 integer taborder = 10
