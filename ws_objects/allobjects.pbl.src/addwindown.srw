@@ -31,6 +31,9 @@ on addwindown.destroy
 destroy(this.cb_1)
 end on
 
+event open;//2
+end event
+
 type cb_1 from commandbutton within addwindown
 integer x = 439
 integer y = 256
