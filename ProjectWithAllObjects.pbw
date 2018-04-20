@@ -3,5 +3,5 @@ Save Format v3.0(19990112)
  0 "allobjects.pbt";
  1 "webservice.pbt";
 @end;
-DefaultTarget "webservice.pbt";
-DefaultRemoteTarget "webservice.pbt";
+DefaultTarget "allobjects.pbt";
+DefaultRemoteTarget "allobjects.pbt";
