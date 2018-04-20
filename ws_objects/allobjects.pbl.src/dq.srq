@@ -1,0 +1,2 @@
+﻿$PBExportHeader$dq.srq
+PBSELECT( VERSION(400) TABLE(NAME="groupo.contacts" ) COLUMN(NAME="groupo.contacts.id") COLUMN(NAME="groupo.contacts.surname")) 

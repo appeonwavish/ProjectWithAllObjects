@@ -1,0 +1,9 @@
+﻿$PBExportHeader$dp.srp
+PIPELINE(source_connect=test,destination_connect=test,type=create,commit=100,errors=100,keyname="contacts_x")
+SOURCE(name="contacts",COLUMN(type=long,name="id",dbtype="integer",key=yes,nulls_allowed=no)
+ COLUMN(type=varchar,name="surname",dbtype="varchar(20)",nulls_allowed=no)
+ COLUMN(type=varchar,name="givenname",dbtype="varchar(20)",nulls_allowed=no))
+RETRIEVE(statement="PBSELECT(TABLE(NAME=~"groupo.contacts~") COLUMN(NAME=~"groupo.contacts.id~") COLUMN(NAME=~"groupo.contacts.surname~") COLUMN(NAME=~"groupo.contacts.givenname~") )")
+DESTINATION(name="contacts_copy",COLUMN(type=long,name="id",dbtype="integer",key=yes,nulls_allowed=no,initial_value="0")
+ COLUMN(type=varchar,name="surname",dbtype="varchar(20)",nulls_allowed=no,initial_value="spaces")
+ COLUMN(type=varchar,name="givenname",dbtype="varchar(20)",nulls_allowed=no,initial_value="spaces"))
